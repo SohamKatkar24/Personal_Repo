@@ -1,0 +1,18 @@
+Starting Climate Prediction job on Taki
+Current Time : 2025.05.14-16.02.08
+SPARK_CONF_DIR: /umbc/rs/is789sp25/users/skatkar1/Project/spark-job-21492535-3-nodes-2025.05.14-16.02.08/spark-conf
+master:cnode002
+nodes: cnode002
+cnode003
+cnode004
+element1:cnode002
+element1:cnode003
+element1:cnode004
+slaves: cnode003
+cnode004
+MemTotal: 394696260 kB MemFree: 297543320 kB MemAvailable: 375709780 kB Cached: 77544880 kB SwapCached: 52620 kB SwapTotal: 12582908 kB SwapFree: 7176868 kB
+core file size (blocks, -c) 0 data seg size (kbytes, -d) unlimited scheduling priority (-e) 0 file size (blocks, -f) unlimited pending signals (-i) 1541638 max locked memory (kbytes, -l) unlimited max memory size (kbytes, -m) 65536000 open files (-n) 131072 pipe size (512 bytes, -p) 8 POSIX message queues (bytes, -q) 819200 real-time priority (-r) 0 stack size (kbytes, -s) unlimited cpu time (seconds, -t) unlimited max user processes (-u) 4096 virtual memory (kbytes, -v) unlimited file locks (-x) unlimited
+cnode004: no org.apache.spark.deploy.worker.Worker to stop
+cnode003: no org.apache.spark.deploy.worker.Worker to stop
+no org.apache.spark.deploy.master.Master to stop
+time /umbc/rs/is789sp25/common/software/spark-3.5.0-bin-hadoop3//bin/spark-submit --master spark://cnode002:7077 --driver-memory 60g --executor-memory 4g  /umbc/rs/is789sp25/users/skatkar1/Project/climate_analysis_final.py
